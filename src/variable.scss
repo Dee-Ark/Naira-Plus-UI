@@ -1,0 +1,54 @@
+:root {
+    /* COLOR VARIABLES */
+    --primary-color: #00a049;
+    --primary-color-light: #23bf76;
+    --secondary-color: #23bf76;
+  
+    --background-color: #fff;
+    --border-color: #e4e4e4;
+    --font-color: #2f3d4d;
+    --title-color: #2f3d4d;
+  
+    --button-text-color: #fff;
+    --button-text-hover-color: #fff;
+  
+    --transfer-detail-background-color: #f4f4f4;
+    --transfer-detail-text-color: #fff;
+    --merchant-name-color: #6c757d;
+  
+    --sidebar-background: #001529;
+    --sidebar-text-color: #fff;
+    --sidebar-hover-text-color: #f5f5f5;
+  
+    /* FONT SIZE VARIABLES */
+    --font-size: 14px;
+    --title-size: 18px;
+    --merchant-name-font-size: 24px;
+    --font-name: "Karla", sans-serif;
+  }
+  
+  /* COLORS */
+  $primary-color: var(--primary-color);
+  $primary-color-light: var(--primary-color-light);
+  $secondary: var(--secondary-color);
+  $background-color: var(--background-color);
+  $sidebar-background: var(--sidebar-background);
+  $sidebar-text-color: var(--sidebar-text-color);
+  $sidebar-hover-text-color: var(--sidebar-hover-text-color);
+  $button-text-color: var(--button-text-color);
+  $button-text-hover-color: var(--button-text-hover-color);
+  $border-color: var(--border-color);
+  $transfer-detail-background-color: var(--transfer-detail-background-color);
+  $transfer-detail-text-color: var(--transfer-detail-text-color);
+  $font-color: var(--font-color);
+  $title-color: var(--title-color);
+  $merchant-name-color: var(--merchant-name-color);
+  
+  /* FONT  SIZES */
+  $font-style: var(--font-style);
+  $font-size: var(--font-size);
+  $title-font-size: var(--title-size);
+  $merchant-name-font-size: var(--merchant-name-font-size);
+  
+  $font-name: var(--font-name);
+  

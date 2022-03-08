@@ -1,1 +1,236 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./variable.scss";
+
+::selection {
+  color: #fff;
+  //background: $primary-color;
+}
+
+.text-right {
+  text-align: right;
+} /* You can add global styles to this file, and also import other style files */
+
+nz-page-header.site-page-header.ant-page-header.ant-page-header-ghost {
+  padding-left: 0;
+}
+
+a {
+  color: $primary-color;
+
+  &:hover,
+  &:active {
+    color: $primary-color-light;
+  }
+}
+
+.ant-switch-checked {
+  background-color: $primary-color;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.ant-checkbox-checked::after {
+  border: 1px solid $primary-color;
+}
+
+.ant-select-selection:hover {
+  border-color: $primary-color;
+  border-right-width: 1px !important;
+}
+
+.ant-select-open .ant-select-selection {
+  border-color: $primary-color-light;
+}
+
+.withIcon {
+  position: relative;
+  .loaderIcon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+  }
+}
+
+.logo {
+  width: 200px;
+  margin: auto;
+  margin-bottom: 2rem;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.btn-group {
+  margin-top: 2rem;
+}
+
+.d-block {
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.text-success {
+  color: #52c41a;
+}
+
+.status-circle {
+  font-size: 10px;
+  line-height: 25px;
+  margin-right: 5px;
+}
+
+.showIcon {
+  .anticon-eye,
+  .anticon-eye-invisible {
+    position: absolute;
+    right: 10px;
+    bottom: 1px;
+    cursor: pointer;
+  }
+}
+
+.ant-btn:hover,
+.ant-btn:focus {
+  color: $primary-color;
+  background-color: #fff;
+  border-color: $primary-color;
+}
+
+.ant-spin-dot-item {
+  background-color: $primary-color;
+}
+
+.ant-btn-link {
+  color: $primary-color;
+}
+
+.ant-btn-primary {
+  color: $button-text-color;
+  background-color: $primary-color;
+  border-color: $primary-color-light;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $button-text-hover-color;
+    background-color: $primary-color-light;
+    border-color: $primary-color;
+  }
+}
+
+.ant-btn-primary-disabled,
+.ant-btn-primary.disabled,
+.ant-btn-primary[disabled],
+.ant-btn-primary-disabled:hover,
+.ant-btn-primary.disabled:hover,
+.ant-btn-primary[disabled]:hover,
+.ant-btn-primary-disabled:focus,
+.ant-btn-primary.disabled:focus,
+.ant-btn-primary[disabled]:focus,
+.ant-btn-primary-disabled:active,
+.ant-btn-primary.disabled:active,
+.ant-btn-primary[disabled]:active,
+.ant-btn-primary-disabled.active,
+.ant-btn-primary.disabled.active,
+.ant-btn-primary[disabled].active {
+  color: #e8e8e8;
+  background-color: $primary-color;
+  border-color: $primary-color-light;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.ant-pagination-prev:focus .ant-pagination-item-link,
+.ant-pagination-next:focus .ant-pagination-item-link,
+.ant-pagination-prev:hover .ant-pagination-item-link,
+.ant-pagination-next:hover .ant-pagination-item-link {
+  color: $primary-color;
+  border-color: $primary-color;
+}
+
+.ant-pagination-item:focus a,
+.ant-pagination-item:hover a {
+  color: $primary-color;
+}
+
+.ant-pagination-item-active {
+  font-weight: 500;
+  background: #fff;
+  border-color: $primary-color;
+}
+
+.ant-pagination-item-active a {
+  color: $primary-color;
+}
+
+.ant-pagination-item-active:focus,
+.ant-pagination-item-active:hover {
+  border-color: $primary-color-light;
+}
+.ant-pagination-item:focus,
+.ant-pagination-item:hover {
+  border-color: $primary-color;
+  transition: all 0.3s;
+}
+
+.ant-pagination-item-active:focus a,
+.ant-pagination-item-active:hover a {
+  color: $primary-color;
+}
+
+.strength {
+  display: flex;
+  width: 100%;
+  height: 5px;
+  margin-bottom: 1rem;
+
+  .bar {
+    margin-right: 5px;
+    height: 100%;
+    width: 25%;
+    transition: box-shadow 500ms;
+    box-shadow: inset 0px 20px #1f1f1f;
+  }
+
+  .bar-show {
+    box-shadow: none;
+  }
+
+  .bar-1 {
+    background: linear-gradient(to right, red, orangered);
+  }
+  .bar-2 {
+    background: linear-gradient(to right, orangered, yellow);
+  }
+  .bar-3 {
+    background: linear-gradient(to right, yellow, yellowgreen);
+  }
+  .bar-4 {
+    background: linear-gradient(to right, yellowgreen, green);
+  }
+}
+
+.guide {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 575.98px) {
+  .filter .ant-col-6 {
+    width: 100%;
+  }
+  .ant-col-8 {
+    width: 100%;
+  }
+}

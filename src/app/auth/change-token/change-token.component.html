@@ -1,0 +1,53 @@
+<app-auth-logo></app-auth-logo>
+<h2 class="title" style="text-align: center;">Change Token</h2>
+<p class="subtitle">Kindly enter your Users details below to Change Token.</p>
+
+<form nz-form [formGroup]="authForm" class="login-form" (ngSubmit)="onSubmit()" id="login">
+  <div>
+    <label nzFor="email">Username:</label>
+        <input type="email" nz-input formControlName="username" class="form-control" placeholder="username" />
+  </div>
+  <br />
+  <div>
+    <label  nzFor="password">Old Transaction Code:</label>
+        <input [type]="showPassword ? 'text' : 'password'" nz-input formControlName="oldtransactioncode" class="form-control" placeholder="old transaction code"/>
+  </div>
+  <br />
+  <div>
+    <label nzFor="password">New Transaction Code:</label>
+        <input [type]="showPassword ? 'text' : 'password'" nz-input formControlName="newtransactioncode" class="form-control" placeholder="new transaction code" />
+  </div>
+  <br>
+  <div>
+    <label  nzFor="password">hash value:</label>
+        <input [type]="showPassword ? 'text' : 'password'" nz-input formControlName="hashvalue" class="form-control" placeholder="hashvalue"/>
+  </div>
+  <div nz-row class="login-form-margin btn-group">
+    <div nz-col Span="12">
+      <label nz-checkbox>
+        <span>Remember me</span> &nbsp;
+        <input type="checkbox" class="form-check-input" formControlName="remember">
+      </label>
+    </div>
+    <div nz-col Span="12" class="text-right">
+      <a class="login-form-forgot" routerLink="/Change-password">Change password</a>
+    </div>
+  </div>
+  <div nz-row class="login-form-margin btn-group">
+    <div nz-col Span="6">
+      <button type="primary" class="btn btn-success btn-sm" [disabled]="authForm.invalid || formloader">
+        <ng-container *ngIf="formloader">
+          <i nz-icon type="'loading'"></i>
+          please wait
+        </ng-container>
+        <ng-container *ngIf="!formloader">
+          Submit
+        </ng-container>
+      </button>
+    </div>
+    <div nz-col Span="6" class="text-right">
+      <a routerLink="/recover-password" class="link">Recover-Password</a>
+    </div>
+  </div>
+</form>
+

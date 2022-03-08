@@ -1,0 +1,81 @@
+<!-- <nz-form-item>
+  <nz-form-control nzErrorTip="Please input your username!">
+    <nz-input-group nzPrefixIcon="user">
+      <input [type]="type" nz-input formControlName="userName" placeholder="Username" [placeholder]="placeholder"
+      [formControl]="control"
+      [readonly]="readonly"
+      [maxlength]="maxlength"
+      name="name"
+      id="name"
+      (blur)="onBlur($event)"
+      (keyup)="onKeyup($event)"
+      (keydown)="onKeyDown($event)"
+      *ngIf="type !== 'number'"
+      [appInputValidator]="validator"
+      />
+    </nz-input-group>
+  </nz-form-control>
+</nz-form-item>
+<nz-form-item>
+<div class="form-group">
+  <label *ngIf="label">{{ label }} <span class="required" *ngIf="required">*</span></label>
+  <div class="withLoader">
+    <i nz-icon [nzType]="'loading'" *ngIf="isloading"></i>
+    
+    <input
+      [type]="type"
+      class="form-control"
+      [placeholder]="placeholder"
+      [formControl]="control"
+      [readonly]="readonly"
+      [maxlength]="maxlength"
+      name="name"
+      id="name"
+      (blur)="onBlur($event)"
+      (keyup)="onKeyup($event)"
+      (keydown)="onKeyDown($event)"
+      *ngIf="type !== 'number'"
+      [appInputValidator]="validator"
+    />
+    <input
+      [type]="type"
+      class="form-control"
+      [placeholder]="placeholder"
+      [formControl]="control"
+      [readonly]="readonly"
+      [maxlength]="maxlength"
+      name="name"
+      id="name"
+      (blur)="onBlur($event)"
+      (keyup)="onKeyup($event)"
+      (keydown)="onKeyDown($event)"
+      *ngIf="type === 'number'"
+      [appInputValidator]="validator"
+    />
+  </div>
+  <small *ngIf="showErrors()" class="text-danger">
+    <span class="d-block" *ngIf="control.errors.required"
+      >{{ name }} is required</span
+    >
+    <span class="d-block" *ngIf="control.errors.character"
+      >{{ name }} can only contain letters</span
+    >
+    <span class="d-block" *ngIf="control.errors.email"
+      >Not a valid email address</span
+    >
+    <span class="d-block" *ngIf="control.errors.confirmPassword"
+      >Confirm Password Not equal to Password</span
+    >
+    <span class="d-block" *ngIf="control.errors.url"
+      >{{ name }} not a valid url</span
+    >
+    <span class="d-block" *ngIf="control.errors.maxlength">
+      {{ name }} should not be more than
+      {{ control.errors.maxlength.requiredLength }} character
+    </span>
+    <span class="d-block" *ngIf="control.errors.minlength">
+      {{ name }} should not be less than
+      {{ control.errors.minlength.requiredLength }} character
+    </span>
+  </small>
+</div> -->
